@@ -20,6 +20,14 @@ namespace proyectoSM
         private void button1_Click(object sender, EventArgs e)
         {
 
+            label1.Text = entrada.Text;
         }
+
+        private void entrada_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
