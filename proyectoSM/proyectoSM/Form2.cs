@@ -34,15 +34,15 @@ namespace proyectoSM
             int suma2 = 0;
             double promedio1;
             double promedio2;
-            int[] numerico1 { 10,11,12,13,14,15};
-            int[] numerico2 { 13,14,15,16,17,18};
+            int[] numerico1 ={ 10,11,12,13,14,15};
+            int[] numerico2 ={ 13,14,15,16,17,18};
 
-            for (i = 0; i < numerico1.length; i++)
+            for (i = 0; i < numerico1.Length; i++)
             {
                 suma1 = suma1 + numerico1[i];
             }
             promedio1 = suma1 / numerico1.Length;
-            for (i = 0; i < numerico2.length; i++)
+            for (i = 0; i < numerico2.Length; i++)
             {
                 suma2 = suma2 + numerico2[i];
             }
