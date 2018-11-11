@@ -10,18 +10,26 @@ using System.Windows.Forms;
 
 namespace proyectoSM
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 frm2 = new Form2();
+            Univariable uni = new Univariable();
 
-            frm2.Show();
+            uni.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           
+            Bivariable Bi = new Bivariable();
+
+            Bi.Show();
         }
     }
 }

@@ -10,23 +10,18 @@ using System.Windows.Forms;
 
 namespace proyectoSM
 {
-    public partial class UnivariableC : Form
+    public partial class Bivariable : Form
     {
-        public UnivariableC()
+        public Bivariable()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
+            BivariableP BIP = new BivariableP();
 
-           UnivariableC2 frm5 = new UnivariableC2();
-            frm5.Show();
+            BIP.Show();
         }
     }
 }

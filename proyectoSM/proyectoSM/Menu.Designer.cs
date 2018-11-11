@@ -1,6 +1,6 @@
 ﻿namespace proyectoSM
 {
-    partial class UnivariableC
+    partial class Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,65 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UnivariableC));
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(168, 120);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(119, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Selecciona una opcion:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label1.Location = new System.Drawing.Point(104, 40);
+            this.label1.Location = new System.Drawing.Point(146, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(268, 24);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Analisis Univariable Categorico";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Size = new System.Drawing.Size(168, 24);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Análisis Estadístico";
             // 
-            // label2
+            // button2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(118, 103);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Selecciona una opcion:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(121, 119);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(234, 21);
-            this.comboBox1.TabIndex = 6;
+            this.button2.Location = new System.Drawing.Point(267, 152);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Bivariable";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(121, 180);
+            this.button1.Location = new System.Drawing.Point(114, 152);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(234, 23);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 8;
-            this.button1.Text = "Tabla de frecuencia";
+            this.button1.Text = "Univariable";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // UnivariableC
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(462, 261);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.MaximumSize = new System.Drawing.Size(478, 300);
             this.MinimumSize = new System.Drawing.Size(478, 300);
-            this.Name = "UnivariableC";
-            this.Text = "UnivariableC";
+            this.Name = "Menu";
+            this.Text = "Menu";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,9 +93,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
     }
 }

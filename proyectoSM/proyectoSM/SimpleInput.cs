@@ -10,23 +10,19 @@ using System.Windows.Forms;
 
 namespace proyectoSM
 {
-    public partial class UnivariableC : Form
+    public partial class SimpleInput : Form
     {
-        public UnivariableC()
+
+        public string TextBoxValue { get; set; }
+
+        public SimpleInput()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-
-           UnivariableC2 frm5 = new UnivariableC2();
-            frm5.Show();
+            TextBoxValue = textBox1.Text;
         }
     }
 }

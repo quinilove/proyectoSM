@@ -38,6 +38,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,11 +50,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AddAttribute.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AddAttribute.Designer.cs">
+      <DependentUpon>AddAttribute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMissingSymbol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMissingSymbol.Designer.cs">
+      <DependentUpon>AddMissingSymbol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="attribute.cs" />
+    <Compile Include="Bivariable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bivariable.Designer.cs">
+      <DependentUpon>Bivariable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BivariableP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BivariableP.Designer.cs">
+      <DependentUpon>BivariableP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="boxPlot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="boxPlot.Designer.cs">
+      <DependentUpon>boxPlot.cs</DependentUpon>
     </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
@@ -61,8 +87,32 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="InitialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InitialForm.Designer.cs">
+      <DependentUpon>InitialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LecturaCSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturaCSV.Designer.cs">
+      <DependentUpon>LecturaCSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimpleInput.Designer.cs">
+      <DependentUpon>SimpleInput.cs</DependentUpon>
+    </Compile>
     <Compile Include="Univariable.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,17 +125,44 @@
     <Compile Include="UnivariableC.Designer.cs">
       <DependentUpon>UnivariableC.cs</DependentUpon>
     </Compile>
+    <Compile Include="UnivariableC2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnivariableC2.Designer.cs">
+      <DependentUpon>UnivariableC2.cs</DependentUpon>
+    </Compile>
     <Compile Include="UnivariableN.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UnivariableN.Designer.cs">
       <DependentUpon>UnivariableN.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="AddAttribute.resx">
+      <DependentUpon>AddAttribute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMissingSymbol.resx">
+      <DependentUpon>AddMissingSymbol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bivariable.resx">
+      <DependentUpon>Bivariable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BivariableP.resx">
+      <DependentUpon>BivariableP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="boxPlot.resx">
+      <DependentUpon>boxPlot.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InitialForm.resx">
+      <DependentUpon>InitialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturaCSV.resx">
+      <DependentUpon>LecturaCSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -95,12 +172,19 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SimpleInput.resx">
+      <DependentUpon>SimpleInput.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Univariable.resx">
       <DependentUpon>Univariable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UnivariableC.resx">
       <DependentUpon>UnivariableC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnivariableC2.resx">
+      <DependentUpon>UnivariableC2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UnivariableN.resx">
       <DependentUpon>UnivariableN.cs</DependentUpon>
@@ -117,6 +201,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moneda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main screen.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

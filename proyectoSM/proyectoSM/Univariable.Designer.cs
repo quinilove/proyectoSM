@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Univariable));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,7 +37,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(120, 153);
+            this.button1.Location = new System.Drawing.Point(111, 189);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -46,7 +47,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(273, 153);
+            this.button2.Location = new System.Drawing.Point(264, 189);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 1;
@@ -58,20 +59,22 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label1.Location = new System.Drawing.Point(147, 44);
+            this.label1.Location = new System.Drawing.Point(142, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(172, 24);
             this.label1.TabIndex = 2;
             this.label1.Text = "Analisis Univariable";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(174, 121);
+            this.label2.Location = new System.Drawing.Point(165, 157);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Selecciona una opcion:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Univariable
             // 
@@ -82,6 +85,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(478, 300);
+            this.MinimumSize = new System.Drawing.Size(478, 300);
             this.Name = "Univariable";
             this.Text = "Univariable";
             this.Load += new System.EventHandler(this.Univariable_Load);
