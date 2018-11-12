@@ -17,6 +17,11 @@ namespace proyectoSM
             InitializeComponent();
         }
 
+        public Univariable(string[] myArray)
+        {
+
+        }
+
         private void Univariable_Load(object sender, EventArgs e)
         {
 

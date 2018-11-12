@@ -38,6 +38,9 @@
             this.RelationNameTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.GuardarButton = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.CSVDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,10 +97,26 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             // 
+            // GuardarButton
+            // 
+            resources.ApplyResources(this.GuardarButton, "GuardarButton");
+            this.GuardarButton.Name = "GuardarButton";
+            this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // LecturaCSV
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.RelationNameTextBox);
@@ -107,6 +126,7 @@
             this.Controls.Add(this.FilePathTextBox);
             this.Controls.Add(this.CSVDataGridView);
             this.Name = "LecturaCSV";
+            this.Load += new System.EventHandler(this.LecturaCSV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CSVDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -124,5 +144,8 @@
         private System.Windows.Forms.TextBox RelationNameTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button GuardarButton;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Button button1;
     }
 }

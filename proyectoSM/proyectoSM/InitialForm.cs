@@ -67,7 +67,7 @@ namespace proyectoSM
                 ParseLine(lineas[i]);              
                 //CSVDataGridView.Rows.Add(lineas[i]);
             }
-            LecturaCSV testDialog = new LecturaCSV(foundAttributes, myDataTable);
+            LecturaCSV testDialog = new LecturaCSV(foundAttributes, myDataTable,relationName,missingValueChar);
 
             testDialog.Show();
             // Show testDialog as a modal dialog and determine if DialogResult = OK.
@@ -90,8 +90,11 @@ namespace proyectoSM
         private void ParseLine(string line)
         {
             string[] tempArray;
+            if(String.IsNullOrEmpty(line))
+            {
 
-            if (line[0] == '%' && line[1] == '%')
+            }
+            else if (line[0] == '%' && line[1] == '%')
             {
                 line = line.Substring(2);
                 //CommentsListBox.Items.Add(line);

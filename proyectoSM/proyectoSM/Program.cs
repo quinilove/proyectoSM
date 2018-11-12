@@ -20,7 +20,7 @@ namespace proyectoSM
             //Application.Run(new Form2());
             //Application.Run(new UnivariableN());
             //Application.Run(new Univariable());
-            Application.Run(new Menu());
+            Application.Run(new InitialForm());
         }
     }
 }
